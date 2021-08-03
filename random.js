@@ -1,4 +1,3 @@
-<script type='text/javascript'>
 var randarray = new Array();var l=0;var flag;
 var numofpost=1;function randomposts(json){
 var total = parseInt(json.feed.openSearch$totalResults.$t,10);
@@ -8,4 +7,3 @@ for(n in randarray){ var p=randarray[n];var entry=json.feed.entry[p-1];
 for(k=0; k < entry.link.length; k++){if(entry.link[k].rel=='alternate'){var itemcok = entry.id.$t.slice(50, entry.id.$t.length);
 document.write(item);}}
 }document.write('</ul>');}
-</script>
